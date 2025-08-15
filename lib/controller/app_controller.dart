@@ -14,7 +14,7 @@ class AppController extends GetxController {
     super.onInit();
     PackageInfo packageInfo = await PackageInfo.fromPlatform();
     currentVersion.value = packageInfo.version;
-    // print(currentVersion.value);
+    print(currentVersion.value);
     checkLatestVersion();
   }
 
@@ -26,7 +26,7 @@ class AppController extends GetxController {
         'https://api.github.com/repos/$repositoryOwner/$repositoryName/releases/latest',
       ),
     );
-    // print(currentVersion);
+    print(currentVersion);
     if (response.statusCode == 200) {
       final Map<String, dynamic> data = json.decode(response.body);
       final tagName = data['tag_name'];
@@ -36,7 +36,7 @@ class AppController extends GetxController {
         // final assetName = asset['name'];
         final assetDownloadUrl = asset['browser_download_url'];
         newAppUrl.value = assetDownloadUrl;
-        // print(assetDownloadUrl);
+        print(assetDownloadUrl);
       }
       if (oldVersion.value != currentVersion.value) {
         checkUpdate();
@@ -83,9 +83,9 @@ class AppController extends GetxController {
         );
       }
     } else {
-      // print(
-      //   'Failed to fetch GitHub release info. Status code: ${response.statusCode}',
-      // );
+      print(
+        'Failed to fetch GitHub release info. Status code: ${response.statusCode}',
+      );
     }
   }
 
@@ -135,6 +135,6 @@ class AppController extends GetxController {
       ),
     );
 
-    // print(currentVersion.value);
+    print(currentVersion.value);
   }
 }

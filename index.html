@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>TODO - Simplify Your Productivity</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='80' font-size='80'>📝</text></svg>"
+    />
+
+    <style>
+      body {
+        margin: 0;
+        background: #181c27;
+        color: #fff;
+        font-family: "Montserrat", "Segoe UI", Arial, sans-serif;
+      }
+      .header {
+        background: #23263a;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 24px 56px;
+      }
+      .brand {
+        display: flex;
+        align-items: center;
+      }
+      .brand-icon {
+        background: #1270fc;
+        color: #fff;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        font-size: 28px;
+        margin-right: 14px;
+      }
+      .brand-title {
+        font-size: 2.1rem;
+        font-weight: 800;
+        letter-spacing: 0.05em;
+      }
+      .download-btn {
+        background: #1270fc;
+        color: #fff;
+        border: none;
+        padding: 12px 36px;
+        border-radius: 30px;
+        font-weight: 600;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background 0.2s;
+      }
+      .download-btn:hover {
+        background: #0457c2;
+      }
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 64px 56px 0 56px;
+      }
+      .left {
+        max-width: 620px;
+      }
+      .main-heading {
+        font-size: 3rem;
+        font-weight: 900;
+        margin-bottom: 18px;
+        margin-top: 0;
+        letter-spacing: 0.01em;
+      }
+      .sub-heading {
+        color: #6ee7b7;
+        font-size: 1rem;
+        margin-bottom: 9px;
+        font-weight: 500;
+      }
+      .description {
+        font-size: 1.2rem;
+        color: #c7c7c7;
+        margin-bottom: 32px;
+      }
+      .right {
+        position: relative;
+      }
+      .circle-bg {
+        background: #1270fc;
+        width: 360px;
+        height: 360px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .phone-visual {
+        width: 210px;
+        height: 420px;
+        background: #23263a;
+        border-radius: 36px;
+        box-shadow: 5px 10px 40px #15193a85;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .phone-text {
+        color: #94a3b8;
+        font-size: 1.3rem;
+        text-align: center;
+        padding: 32px 18px;
+      }
+      .screenshots-section {
+        background: #181c27;
+        text-align: center;
+        padding: 0 0 40px 0;
+      }
+      .screenshots-title {
+        font-size: 2.5rem;
+        font-weight: 800;
+        margin-bottom: 44px;
+        margin-top: 18px;
+      }
+      .screenshots {
+        display: flex;
+        justify-content: center;
+        gap: 36px;
+      }
+      .screenshot-card {
+        padding: 0;
+        margin: 0;
+        background: none;
+        box-shadow: none;
+        border-radius: 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        /* Remove all styling so image stands out clearly */
+      }
+      .screenshot-img {
+        width: 250px;
+        height: 500px;
+        border-radius: 0;
+        background: none;
+        margin-bottom: 0;
+        box-shadow: none;
+        display: block;
+        object-fit: contain;
+      }
+      .footer {
+        background: #181c27;
+        color: #727272;
+        font-size: 1rem;
+        padding: 38px 0 26px 0;
+        text-align: center;
+        margin-top: 22px;
+        font-weight: 500;
+      }
+      .footer a {
+        color: #727272;
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="brand">
+        <span class="brand-icon">&#128221;</span>
+        <span class="brand-title">TODO</span>
+      </div>
+      <a
+        href="https://github.com/krishgupta1/Custom-Todo-App/releases/download/1.0.5/todo_app_1.0.5.apk"
+        target="_blank"
+        style="text-decoration: none"
+      >
+        <button class="download-btn">Download</button>
+      </a>
+    </div>
+    <div class="container">
+      <div class="left">
+        <h1 class="main-heading">Organize Your Life With TODO App</h1>
+        <span class="sub-heading">App version 1.0.5</span><br /><br />
+        <div class="description">
+          Our app 🚀, powered by Flutter and Hive database 🛠️, gives you a
+          smooth experience. Latest updates ⚡ appear instantly—no manual
+          downloads needed, so you always enjoy new features right away!
+        </div>
+        <a
+          href="https://github.com/krishgupta1/Custom-Todo-App/releases/download/1.0.5/todo_app_1.0.5.apk"
+          target="_blank"
+          style="text-decoration: none"
+        >
+          <button class="download-btn">Download</button>
+        </a>
+      </div>
+      <div class="right">
+        <div class="circle-bg">
+          <div class="phone-visual">
+            <div class="phone-text">
+              <strong>TODO List</strong><br />
+              - Finish homework<br />
+              - Buy groceries<br />
+              - Call Mom<br />
+              <br />
+              <strong>Deadline:</strong><br />
+              - Meeting at 4pm<br />
+              <br />
+              <em>Your productive day, simplified.</em>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="screenshots-section">
+      <div class="screenshots-title">Screenshots</div>
+      <div class="screenshots">
+        <div class="screenshot-card">
+          <img
+            src="assets/mockup/Simulator1.png"
+            alt="TODO List Main"
+            class="screenshot-img"
+          />
+        </div>
+        <div class="screenshot-card">
+          <img
+            src="assets/mockup/Simulator2.png"
+            alt="TODO List Detail"
+            class="screenshot-img"
+          />
+        </div>
+        <div class="screenshot-card">
+          <img
+            src="assets/mockup/Simulator4.png"
+            alt="Add Note Screen"
+            class="screenshot-img"
+          />
+        </div>
+        <div class="screenshot-card">
+          <img
+            src="assets/mockup/Simulator5.png"
+            alt="Updated Status Screen"
+            class="screenshot-img"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      Made with ❤️ by
+      <a href="https://www.linkedin.com/in/krishgupta7/" target="_blank"
+        >Krish Gupta</a
+      >
+      &
+      <a href="https://www.linkedin.com/in/sahilmishra03/" target="_blank"
+        >Sahil Mishra</a
+      >
+    </div>
+  </body>
+</html>

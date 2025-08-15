@@ -1,5 +1,5 @@
-// import 'package:todo_app/controller/app_controller.dart';
-// import 'package:get/instance_manager.dart';
+import 'package:todo_app/controller/app_controller.dart';
+import 'package:get/instance_manager.dart';
 import 'package:intl/intl.dart';
 import 'package:todo_app/boxes/boxes.dart';
 import 'package:todo_app/models/notes_model.dart';
@@ -24,7 +24,7 @@ class _ScreenState extends State<Screen> {
 
   @override
   Widget build(BuildContext context) {
-    // AppController appController = Get.put(AppController());
+    AppController appController = Get.put(AppController());
 
     return Scaffold(
       backgroundColor: _bgDark,
@@ -69,7 +69,7 @@ class _ScreenState extends State<Screen> {
                         border: Border.all(color: _buttonBlue, width: 0.8),
                         boxShadow: [
                           BoxShadow(
-                            color: Colors.black,
+                            color: Colors.black.withOpacity(0.5),
                             blurRadius: 6,
                             offset: const Offset(0, 4),
                           ),
